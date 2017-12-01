@@ -1,0 +1,363 @@
+
+$color_scarpa_flow_approx: #555d5e;
+$color_nevada_approx: #677273;
+$color_gallery_approx: #f0f0f0;
+$color_desert_storm_approx: #f8f8f8;
+$wild_sand: #f4f4f4;
+$color_submarine_approx: #b5c8ca;
+$white: #fff;
+$color_curious_blue_approx: #2e8ece;
+$color_wisteria_approx: #a66bbe;
+$color_celeste_approx: #cccccc;
+$gray: #808080;
+$color_tree_poppy_approx: #f39c12;
+$color_emerald_approx: #40d47e;
+$color_downy_approx: #65c6bb;
+
+$font_0: Roboto;
+$font_1: sans-serif;
+
+//@extend-elements
+//original selectors
+//.content-list-detail >li, .content-list-info >li
+%extend_1 {
+	position: relative;
+	top: -1px;
+	left: 0;
+	font-size: 10px;
+	font-weight: 300;
+	display: inline-block;
+	padding: 2px 5px 1px;
+	border: 1px solid $color_celeste_approx;
+	color: $gray;
+	margin: 5px 0 0 3px;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+footer {
+	display: block;
+}
+header {
+	display: block;
+}
+menu {
+	display: block;
+}
+section {
+	display: block;
+	padding: 90px 0 120px;
+}
+body {
+	width: 100%;
+	line-height: 20px;
+	background-color: $color_scarpa_flow_approx;
+	color: $color_nevada_approx;
+	font-family: $font_0, $font_1;
+	font-size: 15px;
+	margin: auto;
+}
+ol {
+	list-style: none;
+}
+ul {
+	list-style: none;
+}
+a {
+	color: $color_gallery_approx;
+	text-decoration: none;
+}
+.section {
+	padding: 90px 0 120px;
+}
+#a-propos {
+	background-color: $color_desert_storm_approx;
+	.descript {
+		display: flex;
+		justify-content: center;
+		text-align: justify;
+	}
+}
+#experience {
+	background-color: $color_desert_storm_approx;
+}
+#interets {
+	background-color: $color_desert_storm_approx;
+}
+#realisations {
+	background-color: $color_gallery_approx;
+}
+ {
+	background-color: $color_gallery_approx;
+}
+#diplomes {
+	background-color: $wild_sand;
+}
+#contact {
+	background-color: $color_nevada_approx;
+}
+#menu {
+	display: block;
+	width: 100%;
+	font-weight: 300;
+	text-align: center;
+	background-color: $color_scarpa_flow_approx;
+	text-transform: uppercase;
+	z-index: 999;
+}
+.menu-list {
+	li {
+		display: inline-block;
+	}
+	a {
+		display: block;
+		color: $color_submarine_approx;
+		padding: 15px 5px;
+		//Instead of the line below you could use @include transition-property($property-1, $property-2, $property-3, $property-4, $property-5, $property-6, $property-7, $property-8, $property-9, $property-10)
+		transition-property: color;
+		//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+		transition-duration: 0.5s;
+		//Instead of the line below you could use @include transition-timing-function($function-1, $function-2, $function-3, $function-4, $function-5, $function-6, $function-7, $function-8, $function-9, $function-10)
+		transition-timing-function: linear;
+		&:hover {
+			color: $white;
+			//Instead of the line below you could use @include transition-property($property-1, $property-2, $property-3, $property-4, $property-5, $property-6, $property-7, $property-8, $property-9, $property-10)
+			transition-property: color;
+			//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+			transition-duration: 0.5s;
+			//Instead of the line below you could use @include transition-timing-function($function-1, $function-2, $function-3, $function-4, $function-5, $function-6, $function-7, $function-8, $function-9, $function-10)
+			transition-timing-function: linear;
+		}
+	}
+}
+.menu-button {
+	cursor: pointer;
+	display: none;
+}
+.header {
+	position: relative;
+	z-index: -999;
+	width: 100%;
+	height: 280px;
+	background-color: $color_nevada_approx;
+}
+.head {
+	position: fixed;
+	width: 100%;
+	margin-top: 100px;
+	z-index: -1;
+	color: $white;
+	text-align: center;
+}
+.head-name {
+	display: block;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.head-function {
+	display: inline-block;
+	margin: 10px;
+	padding-top: 10px;
+	font-size: 152%;
+	text-transform: uppercase;
+	font-weight: 300;
+	border-top: 1px solid $white;
+}
+.title {
+	width: 100%;
+	padding: 5px 0;
+	margin-top: 40px;
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+.intro {
+	margin: 5px 0 60px;
+	font-size: 90%;
+	font-weight: 300;
+	font-style: italic;
+	text-align: center;
+}
+#competences {
+	background-color: $wild_sand;
+}
+.list_competence {
+	background-color: $white;
+	width: 200px;
+	padding: 10px 50px;
+	float: left;
+	margin: 30px;
+}
+#back_end {
+	border-bottom: 2px solid $color_curious_blue_approx;
+}
+#front_end {
+	border-bottom: 2px solid $color_wisteria_approx;
+}
+.skill_title {
+	display: block;
+	font-size: 110%;
+	font-weight: 700;
+	text-align: center;
+	margin: 20px 0 15px;
+}
+.skill_list {
+	margin: 10px 0 20px;
+	li {
+		margin-bottom: 5px;
+	}
+}
+.skill_content {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+}
+.content_exp {
+	margin-bottom: 50px;
+}
+.titre_exp {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.intituler_exp {
+	margin-bottom: 10px;
+}
+.company_detail {
+	display: inline-block;
+}
+.content-list-detail {
+	display: block;
+	margin: 0 0 5px 15px;
+	display: inline-block;
+	margin-left: 0;
+	> li {
+		@extend %extend_1;
+	}
+}
+.content-list-info {
+	display: inline-block;
+	> li {
+		@extend %extend_1;
+	}
+}
+.bullet {
+	position: relative;
+	top: -2px;
+	display: inline-block;
+	margin: 0 5px;
+	text-align: center;
+	vertical-align: top;
+	&:after {
+		content: "\25A0";
+	}
+}
+.content_diplome {
+	margin-bottom: 50px;
+}
+.titre_diplome {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.subtitle_diplome {
+	margin-bottom: 10px;
+}
+.list_interet {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.element_interet {
+	width: 200px;
+	float: left;
+	margin-right: 50px;
+	display: block;
+}
+.titre_interet {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.detail_interet {
+	font-size: 12px;
+}
+.white {
+	color: $white;
+}
+.list_contact {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.element_contact {
+	background-color: $white;
+	width: 230px;
+	padding: 1px 90px;
+	float: left;
+	margin: 30px;
+}
+#telephone {
+	border-bottom: 2px solid $color_tree_poppy_approx;
+}
+#ville {
+	border-bottom: 2px solid $color_emerald_approx;
+}
+#mail {
+	border-bottom: 2px solid $color_downy_approx;
+}
+.contact-title {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 20px 0;
+	a {
+		color: $color_nevada_approx;
+	}
+}
+@media only screen and(max-device-width : 936px) {
+	.descript {
+		margin: 20px;
+	}
+	.list_interet {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.element_interet {
+		margin-bottom: 15px;
+	}
+	.list_contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.element_contact {
+		width: 100px;
+		margin: 15px;
+	}
+	.contact-title {
+		font-size: 10px;
+	}
+	.skill_list li {
+		margin-bottom: 15px;
+	}
+}
+@media print {
+	#contact {
+		display: none;
+	}
+}

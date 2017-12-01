@@ -1,0 +1,358 @@
+/*********************************GENERAL************************************/
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+}
+footer,header,menu,section {
+    display:block;
+}
+body {
+    width:100%;
+    line-height: 20px;
+    background-color:#555D5E;
+    color:#677273;
+    font-family:'Roboto',sans-serif;
+    font-size:15px;
+    margin:auto;
+}
+ol,ul {
+    list-style:none;
+}
+
+a {
+    color:#F0F0F0;
+    text-decoration:none;
+}
+section,.section {
+    padding:90px 0 120px 0;
+}
+#a-propos,#experience,#interets {
+    background-color:#f8f8f8
+}
+#realisations,{
+    background-color:#f0f0f0;
+}
+#diplomes{
+    background-color:#f4f4f4;
+}
+#contact {
+    background-color:#677273;
+}
+
+.blue{
+    color:#1ba39c;
+}
+.green{
+    color:#27ae60;
+}
+/*********************************MENU************************************/
+#menu {
+    display:block;
+    width:100%;
+    font-weight:300;
+    text-align:center;
+    background-color:#555d5e;
+    text-transform:uppercase;
+    z-index:999;
+}
+.menu-list li {
+    display:inline-block;
+}
+.menu-list a {
+    display:block;
+    color:#b5c8ca;
+    padding:15px 5px;
+    transition-property:color;
+    transition-duration:0.5s;
+    transition-timing-function:linear;
+}
+.menu-list a:hover {
+    color:#fff;
+    transition-property:color;
+    transition-duration:0.5s;
+    transition-timing-function:linear;
+}
+.menu-button {
+    cursor:pointer;
+    display:none;
+}
+
+/*********************************HEAD************************************/
+.header {
+    position:relative;
+    z-index:-999;
+    width:100%;
+    height:280px;
+    background-color:#677273;
+}
+.head {
+    position:fixed;
+    width:100%;
+    margin-top:100px;
+    z-index:-1;
+    color:#fff;
+    text-align:center;
+}
+.head-name {
+    display:block;
+    font-size:30px;
+    text-transform:uppercase;
+    font-weight:900;
+}
+.head-function {
+    display:inline-block;
+    margin:10px;
+    padding-top:10px;
+    font-size:152%;
+    text-transform:uppercase;
+    font-weight:300;
+    border-top:1px solid #fff;
+}
+/*********************************A PROPOS************************************/
+
+.title {
+    width:100%;
+    padding:5px 0;
+    margin-top:40px;
+    text-align:center;
+    font-size:25px;
+    text-transform:uppercase;
+    font-weight:900;
+}
+.intro {
+    margin:5px 0 60px 0;
+    font-size:90%;
+    font-weight:300;
+    font-style:italic;
+    text-align:center;
+}
+#a-propos .descript {
+    display:flex;
+    justify-content: center;
+    text-align:justify;
+}
+
+/*********************************COMPETENCES************************************/
+
+#competences {
+    background-color:#f4f4f4;
+}
+.list_competence {
+    background-color:white;
+    width:200px;
+    padding:10px 50px;
+    float:left;
+    margin:30px;
+}
+#back_end {
+    border-bottom:2px solid #2e8ece;
+}
+
+#front_end {
+    border-bottom:2px solid #a66bbe;
+}
+
+.skill_title {
+    display:block;
+    font-size:110%;
+    font-weight:700;
+    text-align:center;
+    margin:20px 0 15px 0;
+}
+.skill_list {
+    margin:10px 0 20px 0;
+}
+.skill_list li {
+    margin-bottom:5px;
+}
+
+.skill_content{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.center{
+    margin-left: auto;
+    margin-right:auto;
+    width:40%;
+}
+/*********************************EXPERIENCE************************************/
+
+.content_exp{
+    margin-bottom:50px;
+}
+.titre_exp{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+.intituler_exp{
+    margin-bottom:10px;
+}
+
+.company_detail {
+    display:inline-block;
+}
+
+.content-list-detail {
+    display:block;
+    margin:0 0 5px 15px;
+}
+.content-list-detail>li,.content-list-info>li {
+    position:relative;
+    top:-1px;
+    left:0px;
+    font-size:10px;
+    font-weight:300;
+    display:inline-block;
+    padding:2px 5px 1px 5px;
+    border:1px solid #CCCCCC;
+    color:#808080;
+    margin:5px 0 0 3px;
+}
+.content-list-detail {
+    display:inline-block;
+    margin-left:0px;
+}
+
+.bullet {
+    position:relative;
+    top:-2px;
+    display:inline-block;
+    margin:0 5px 0 5px;
+    text-align:center;
+    vertical-align:top;
+}
+
+.bullet:after {
+    content:"\25A0";
+}
+/*********************************DIPLOME************************************/
+
+.content_diplome{
+    margin-bottom:50px;
+}
+
+.titre_diplome{
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.subtitle_diplome{
+    margin-bottom:10px;
+}
+
+.content-list-info {
+    display:inline-block;
+}
+/*********************************INTERET************************************/
+
+.list_interet{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.element_interet{
+    width:200px;
+    float:left;
+    margin-right:50px;
+    display:block;
+}
+
+.titre_interet{
+    margin-bottom:20px;
+    font-weight: bold;
+}
+
+.detail_interet{
+    font-size:12px;
+}
+
+/*********************************CONTACT************************************/
+
+.white {
+    color:#fff;
+}
+
+.list_contact{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.element_contact {
+    background-color:white;
+    width:230px;
+    padding:1px 90px;
+    float:left;
+    margin:30px;
+}
+
+#telephone {
+    border-bottom:2px solid #f39c12;
+}
+
+#ville {
+    border-bottom:2px solid #40d47e;
+}
+
+#mail {
+    border-bottom:2px solid #65c6bb;
+}
+
+.contact-title {
+    font-size:16px;
+    font-weight:700;
+    margin:20px 0 20px 0;
+}
+.contact-title a {
+    color:#677273;
+}
+
+
+/**************************MEDIA*******************/
+
+@media only screen and (max-device-width : 936px) {
+    .descript{
+        margin:20px;
+    }
+    
+    .skill_list li {
+        margin-bottom:15px;
+    }
+    .list_interet{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .element_interet{
+        margin-bottom:15px;
+    }
+    .list_contact {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .element_contact{
+        width:100px;
+        margin:15px;
+    }
+
+    .contact-title{
+        font-size:10px;
+    }
+}
+
+@media print{
+    #contact{
+        display:none;
+    }
+}

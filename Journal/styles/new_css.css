@@ -1,0 +1,210 @@
+body {
+  font-size: 13px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #979797; }
+
+a {
+  text-decoration: none; }
+
+div.part {
+  display: block;
+  width: 960px;
+  margin: 0 auto;
+  text-align: left; }
+
+.clear {
+  display: block;
+  clear: both; }
+  .clear:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0; }
+
+#header {
+  display: block;
+  width: 960px; }
+  #header #logo {
+    padding: 20px 0 0 0;
+    float: left; }
+    #header #logo h1 {
+      font-weight: normal;
+      text-transform: none;
+      font-size: 36px; }
+    #header #logo h2 {
+      font-weight: normal;
+      text-transform: none;
+      font-size: 13px; }
+  #header nav {
+    display: block;
+    float: right;
+    margin: 20px 0 0 0;
+    padding: 20px 0; }
+    #header nav li {
+      display: inline;
+      margin-right: 25px;
+      text-transform: uppercase; }
+      #header nav li a {
+        padding: 5px 8px;
+        color: #FFFFFF;
+        background-color: #666666; }
+        #header nav li a:hover {
+          color: #FF9900;
+          background-color: #FFFFFF; }
+    #header nav li.last {
+      margin-right: 0; }
+
+#container {
+  display: block;
+  width: 960px;
+  display: block;
+  width: 100%;
+  margin: 0 0 30px 0; }
+  #container .more {
+    text-align: right; }
+  #container p {
+    text-align: justify; }
+  #container #sub_title {
+    margin-bottom: 50px;
+    padding: 30px 0;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE; }
+  #container #articles {
+    margin-bottom: 50px;
+    line-height: 22px; }
+  #container article h2 {
+    font-size: 14px;
+    margin-bottom: 15px; }
+  #container article img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 10px 0;
+    padding: 4px; }
+  #container article p {
+    font-size: 14px;
+    line-height: 20px; }
+  #container article footer {
+    margin: 10px 0 0 0; }
+
+#footer {
+  display: block;
+  width: 960px;
+  padding: 20px 0; }
+  #footer p {
+    margin: 0;
+    padding: 0; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.une a {
+  color: #979797; }
+
+.principal a {
+  color: #FF9900; }
+
+#sub_title h1 {
+  font-size: 56px;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center; }
+#sub_title p {
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 30px; }
+#sub_title img {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px; }
+
+.article {
+  display: block;
+  float: left;
+  margin: 0 30px 0 0;
+  width: 300px; }
+
+.lastbox {
+  margin-right: 0; }
+
+.foot {
+  border-top: 1px solid #DEDEDE; }
+  .foot a {
+    color: #979797; }
+
+.fl_left {
+  float: left; }
+
+.fl_right {
+  float: right; }
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto; }
+  #form input {
+    font-size: 13px;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    color: #726659;
+    border: solid 1px #b3aca7;
+    border-bottom: none; }
+    #form input:hover {
+      background: #F7BE81;
+      color: #848484; }
+  #form textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: #726659;
+    font-size: 0.875em;
+    border: solid 1px #b3aca7; }
+    #form textarea:hover {
+      background: #F7BE81;
+      color: #848484; }
+  #form #submit {
+    width: 502px;
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    font-size: 0.875em;
+    color: #b3aca7;
+    outline: none;
+    cursor: pointer;
+    border: solid 1px #b3aca7;
+    border-top: none; }
+    #form #submit:hover {
+      color: #848484; }
+
+@media print {
+  .une {
+    display: none; }
+
+  .more {
+    display: none; } }
+
+/*# sourceMappingURL=new_css.css.map */
